@@ -8,3 +8,9 @@ before_install:
   
 script:
   - docker run -e CI=true jesterhead101/docker-react npm run test
+
+deploy:
+  provider: azure_web_apps
+  username: ksriharsha@itssglobal.com
+  password: Changeit@1.
+  site: https://dockerreact1.azurewebsites.net

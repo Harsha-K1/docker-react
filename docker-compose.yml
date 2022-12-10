@@ -3,18 +3,12 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile.dev
-    ports: 
-      - "3000:3000"
-    volumes:
-      - /app/node_modules
-      - .:/app
-  tests:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /app/node_modules
-      - .:/app
-    command: ["npm", "run", "test"]
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
 
+deploy:
+  provider: azure_web_apps
+  username: ksriharsha@itssglobal.com
+  password: Changeit@1.
+  site: https://dockerreact1.azurewebsites.net

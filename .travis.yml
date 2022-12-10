@@ -13,4 +13,4 @@ deploy:
   provider: azure_web_apps
   username: ksriharsha@itssglobal.com
   password: Changeit@1.
-  site: https://dockerreact1.azurewebsites.net
+  site: https://dockerreacthk.azurewebsites.net
